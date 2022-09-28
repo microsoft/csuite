@@ -31,3 +31,14 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+
+## Testing LaTeX rendering in GitHub
+
+$$
+\begin{align}
+X_0 &\sim N(0, 1) \\
+X_1 &= \frac{1}{2}X_0 + \frac{\sqrt{3}}{2}Z_1
+\end{align}
+$$
+where $Z_1 \sim N(0,1)$ is independent of $X_0$. The dataset is constructed so that the observational distribution is the same if $X_0$ and $X_1$ are swapped and both nodes have the same marginal variance of 1. This model is not structural identifiable from observational data.
