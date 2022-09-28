@@ -41,4 +41,5 @@ X_0 &\sim N(0, 1) \\
 X_1 &= \frac{1}{2}X_0 + \frac{\sqrt{3}}{2}Z_1
 \end{align}
 $$
+
 where $Z_1 \sim N(0,1)$ is independent of $X_0$. The dataset is constructed so that the observational distribution is the same if $X_0$ and $X_1$ are swapped and both nodes have the same marginal variance of 1. This model is not structural identifiable from observational data.
