@@ -62,12 +62,26 @@ The interventional data JSON consists of *pairs* of interventional environments,
 
 ## Download
 
+### From the terminal
+
 You can download CSuite datasets using the following URL pattern
 ```
-$ wget https://azuastoragepublic.blob.core.windows.net/datasets/csuite_<name>/data.zip
+$ curl -O https://azuastoragepublic.blob.core.windows.net/datasets/csuite_<name>/data.zip
 ```
 
+### From Python
 
+The uncompressed files listed under [Data format](#data-format) are also directly available from the same location as the zip files. These may either be accessed through their http links, replacing data.zip with the target file, e.g. https://azuastoragepublic.blob.core.windows.net/datasets/csuite_linexp/train.csv or their equivalent azure blob storage paths. To load these directly in python:
+
+```python
+import pandas as pd
+
+# Load over HTTP
+df = pd.read_csv("https://azuastoragepublic.blob.core.windows.net/datasets/csuite_linexp/train.csv")
+
+# Load using `adlfs` (`pip install adlfs`)
+df = pd.read_csv("az://datasets@azuastoragepublic.blob.core.windows.net/csuite_linexp/train.csv")
+```
 
 ## Citation
 If you use CSuite datasets in your work, please cite the following [paper](https://arxiv.org/pdf/2202.02195.pdf) which originally introduced these datasets
