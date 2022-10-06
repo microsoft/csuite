@@ -398,7 +398,7 @@ p(X_1|X_0=x,X_1=y) &= \begin{cases}
     \left(\tfrac{1}{13},\tfrac{1}{13},\tfrac{11}{13} \right) & \text{ if } x=2,y=0 \\
     \left(\tfrac{31}{43},\tfrac{11}{43},\tfrac{1}{43} \right) & \text{ if } x=0,y=1 \\
     \left(\tfrac{21}{43},\tfrac{21}{43},\tfrac{1}{43} \right) & \text{ if } x=1,y=1 \\
-    \left(\tfrac{21}{43},\tfrac{11}{43},\tfrac{11}{43} \right) & \text{ if } x=2,y=1 \\
+    \left(\tfrac{21}{43},\tfrac{11}{43},\tfrac{11}{43} \right) & \text{ if } x=2,y=1. \\
     \end{cases}
 \end{align}
 $$
