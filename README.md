@@ -6,7 +6,7 @@ CSuite is a collection of synthetic datasets for benchmarking causal machine lea
  - 2000 rows of observational test data;
  - interventional test data, for benchmarking estimation of average treatment effect (ATE) and conditional average treatment effect (CATE), 2000 rows per interventional environment.
  
-The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py) is available.
+The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py) is publically available.
 
 ## Summary of datasets
 
@@ -88,7 +88,7 @@ If you use CSuite datasets in your work, please cite the following [paper](https
 ```
 @article{geffner2022deep,
     title={Deep End-to-end Causal Inference},
-    author={Geffner, Tomas and Antoran, Javier and Foster, Adam and Gong, Wenbo and Ma, Chao and Kiciman, Emre and Sharma, Amit and Lamb, Angus and Kukla, Martin and Pawlowski, Nick and others},
+    author={Geffner, Tomas and Antoran, Javier and Foster, Adam and Gong, Wenbo and Ma, Chao and Kiciman, Emre and Sharma, Amit and Lamb, Angus and Kukla, Martin and Pawlowski, Nick and  Allamanis, Miltiadis and Zhang, Cheng},
     journal={arXiv preprint arXiv:2202.02195},
     year={2022}
 }
