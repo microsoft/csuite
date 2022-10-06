@@ -6,7 +6,7 @@ CSuite is a collection of synthetic datasets for benchmarking causal machine lea
  - 2000 rows of observational test data;
  - interventional test data, for benchmarking estimation of average treatment effect (ATE) and conditional average treatment effect (CATE), 2000 rows per interventional environment.
  
-The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py) is publically available.
+The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py) is publicly available.
 
 ## Summary of datasets
 
