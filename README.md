@@ -269,7 +269,7 @@ The structural equations are
 
 $$
 \begin{align}
-X_2 &\sim U\left(\frac{1}{6},\frac{1}{6},\frac{1}{6},\frac{1}{6},\frac{1}{6},\frac{1}{6}\right) \\
+X_2 &\sim \text{Cat}\left(\frac{1}{6},\frac{1}{6},\frac{1}{6},\frac{1}{6},\frac{1}{6},\frac{1}{6}\right) \\
 p(X_0|X_2=x)  &= \begin{cases}
     \left(\tfrac{1}{12},\tfrac{11}{12} \right) & \text{ if } x < 3 \\
     \left(\tfrac{11}{12},\tfrac{1}{12} \right) & \text{ if } x \ge 3 \\
