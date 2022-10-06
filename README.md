@@ -200,7 +200,7 @@ A complete description of the structural equations can be found in the [data gen
 
 <img src="figures/weak_arrows.PNG" alt="Weak arrows graph" width="400px" />
 
-A larger dataset that is similar to `large_backdoor`, but with many additional edges. . The causal discovery challenge revolves
+A larger dataset that is similar to `large_backdoor`, but with many additional edges. The causal discovery challenge revolves
 around finding all arrows, which are scaled to be relatively weak, but which have significant predictive power for $X_8$ in aggregate.
 
 A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py).
@@ -357,7 +357,23 @@ A complete description of the structural equations can be found in the [data gen
 |  $X_1$ | Discrete on $\\{0,1,2\\}$  |
 |  $X_2$ | Discrete on $\\{0,1\\}$ |
 
-A chain graph with discrete variables.
+A chain graph with discrete variables. The structural equations are 
+
+$$
+\begin{align}
+X_0 &\sim \text{Cat}\left(\frac{1}{4}, \frac{1}{4}, \frac{1}{2}\right)\\
+p(X_1|X_0=x) &= \begin{cases}
+    \left(\tfrac{3}{4},\tfrac{1}{8},\tfrac{1}{8} \right) & \text{ if } x=0 \\
+    \left(\tfrac{1}{8},\tfrac{3}{4},\tfrac{1}{8} \right) & \text{ if } x=1 \\
+    \left(\tfrac{1}{8},\tfrac{1}{8},\tfrac{3}{4} \right) & \text{ if } x=2 \\
+    \end{cases} \\
+p(X_2|X_1=y) &= \begin{cases}
+    \left(\tfrac{6}{7},\tfrac{1}{7} \right) & \text{ if } y=0 \\
+    \left(\tfrac{6}{7},\tfrac{1}{7} \right) & \text{ if } y=1 \\
+    \left(\tfrac{1}{7},\tfrac{6}{7} \right) & \text{ if } y=2. \\
+    \end{cases} \\
+\end{align}
+$$
 
 
 ### cat_collider
@@ -370,7 +386,22 @@ A chain graph with discrete variables.
 |  $X_1$ | Discrete on $\\{0,1,2\\}$  |
 |  $X_2$ | Discrete on $\\{0,1\\}$ |
 
-A collider graph with discrete variables.
+A collider graph with discrete variables. The structural equations are
+
+$$
+\begin{align}
+X_0 &\sim \text{Cat}\left(\frac{1}{4}, \frac{1}{4}, \frac{1}{2}\right)\\
+X_2 &\sim \text{Cat}\left(\frac{1}{2}, \frac{1}{2}\right) \\
+p(X_1|X_0=x,X_1=y) &= \begin{cases}
+    \left(\tfrac{11}{13},\tfrac{1}{13},\tfrac{1}{13} \right) & \text{ if } x=0,y=0 \\
+    \left(\tfrac{1}{13},\tfrac{11}{13},\tfrac{1}{13} \right) & \text{ if } x=1,y=0 \\
+    \left(\tfrac{1}{13},\tfrac{1}{13},\tfrac{11}{13} \right) & \text{ if } x=2,y=0 \\
+    \left(\tfrac{31}{43},\tfrac{11}{43},\tfrac{1}{43} \right) & \text{ if } x=0,y=1 \\
+    \left(\tfrac{21}{43},\tfrac{21}{43},\tfrac{1}{43} \right) & \text{ if } x=1,y=1 \\
+    \left(\tfrac{21}{43},\tfrac{11}{43},\tfrac{11}{43} \right) & \text{ if } x=2,y=1 \\
+    \end{cases}
+\end{align}
+$$
 
 
 
