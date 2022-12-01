@@ -8,6 +8,9 @@ CSuite is a collection of synthetic datasets for benchmarking causal machine lea
  
 The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py) is publicly available.
 
+## Versioning
+CSuite datasets are versioned so that we can amend and add datasets, whilst ensuring backwards compatibility with older versions of the data. Full reproducibility with CSuite requires specifying the correct version.
+
 ## Summary of datasets
 
 |  Dataset | No. nodes  | No. edges  | Additive noise model?  |  Discrete/continuous | ATE benchmarking |  CATE benchmarking | Download link |
