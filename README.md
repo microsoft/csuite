@@ -13,23 +13,25 @@ CSuite datasets are versioned so that we can amend and add datasets, whilst ensu
 
 ## Summary of datasets
 
+The download URLs here are for the latest version.
+
 |  Dataset | No. nodes  | No. edges  | Additive noise model?  |  Discrete/continuous | ATE benchmarking |  CATE benchmarking | Download link |
 | :------------ | :------------ | :------------ | :------------ | :------------ |:------------ |:------------ |:------------ |
-| lingauss  | 2  | 1  | Y  | Continuous  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_lingauss/data.zip |
-| linexp  | 2  | 1 | Y  | Continuous  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_linexp/data.zip |
-| nonlingauss  | 2  | 1  | Y  | Continuous  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_nonlingauss/data.zip |
-| nonlin_simpson  | 4  | 4  | Y  | Continuous  | Y | Y | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_nonlin_simpson/data.zip |
-| symprod_simpson  | 4  |  4 | Y   |  Continuous | Y | Y | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_symprod_simpson/data.zip |
-| large_backdoor  | 9  | 10  | Y  | Continuous  | Y | Y | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_backdoor/data.zip |
-| weak_arrows  | 9  | 15  | Y  |  Continuous  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_weak_arrows/data.zip |
-| cat_to_cts  | 2  | 1  | N  | Mixed  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_cat_to_cts/data.zip |
-| cts_to_cat  | 2  | 1  | N  | Mixed  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_cts_to_cat/data.zip |
-| mixed_simpson  | 4  |4  | N  | Mixed  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_mixed_simpson/data.zip |
-| large_backdoor_binary_t  | 9  | 10  | N  | Mixed  | Y | Y | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_large_backdoor_binary_t/data.zip |
-| weak_arrows_binart_t  | 9  | 15  | N  | Mixed  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_weak_arrows_binary_t/data.zip |
-| mixed_confounding  | 12  | 15  | N  | Mixed  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_mixed_confounding/data.zip |
-| cat_chain  | 3  | 2  | N  | Discrete  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_cat_chain/data.zip |
-| cat_collider  | 3  | 2  | N  | Discrete  | Y | N | https://azuastoragepublic.blob.core.windows.net/datasets/csuite_cat_collider/data.zip |
+| lingauss  | 2  | 1  | Y  | Continuous  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_lingauss.zip |
+| linexp  | 2  | 1 | Y  | Continuous  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_linexp.zip |
+| nonlingauss  | 2  | 1  | Y  | Continuous  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_nonlingauss.zip |
+| nonlin_simpson  | 4  | 4  | Y  | Continuous  | Y | Y | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_nonlin_simpson.zip |
+| symprod_simpson  | 4  |  4 | Y   |  Continuous | Y | Y | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_symprod_simpson.zip |
+| large_backdoor  | 9  | 10  | Y  | Continuous  | Y | Y | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_large_backdoor.zip |
+| weak_arrows  | 9  | 15  | Y  |  Continuous  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_weak_arrows.zip |
+| cat_to_cts  | 2  | 1  | N  | Mixed  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_cat_to_cts.zip |
+| cts_to_cat  | 2  | 1  | N  | Mixed  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_cts_to_cat.zip |
+| mixed_simpson  | 4  |4  | N  | Mixed  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_mixed_simpson.zip |
+| large_backdoor_binary_t  | 9  | 10  | N  | Mixed  | Y | Y | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_large_backdoor_binary_t.zip |
+| weak_arrows_binary_t  | 9  | 15  | N  | Mixed  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_weak_arrows_binary_t.zip |
+| mixed_confounding  | 12  | 15  | N  | Mixed  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_mixed_confounding.zip |
+| cat_chain  | 3  | 2  | N  | Discrete  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_cat_chain.zip |
+| cat_collider  | 3  | 2  | N  | Discrete  | Y | N | https://github.com/microsoft/csuite/releases/download/v0.1/csuite_cat_collider.zip |
 
 
 ## Data format
@@ -67,14 +69,14 @@ The interventional data JSON consists of *pairs* of interventional environments,
 
 ### From the terminal
 
-You can download CSuite datasets using the following URL pattern
+You can download CSuite datasets from any previous version using the following URL pattern
 ```
-$ curl -O https://azuastoragepublic.blob.core.windows.net/datasets/csuite_<name>/data.zip
+$ curl -O https://github.com/microsoft/csuite/releases/download/v<version>/csuite_<dataset>.zip
 ```
 
 ### From Python
 
-The uncompressed files listed under [Data format](#data-format) are also directly available from the same location as the zip files. These may either be accessed through their HTTP links, replacing `data.zip` with the target file, e.g. https://azuastoragepublic.blob.core.windows.net/datasets/csuite_linexp/train.csv or their equivalent azure blob storage paths. To load these directly in python:
+The uncompressed files listed under [Data format](#data-format) are also directly available from a public storage account. These may either be accessed through their HTTP links, e.g. https://azuastoragepublic.blob.core.windows.net/datasets/csuite_linexp/train.csv or their equivalent Azure blob storage paths. To load these directly in python:
 
 ```python
 import pandas as pd
