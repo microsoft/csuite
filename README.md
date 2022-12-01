@@ -71,8 +71,9 @@ The interventional data JSON consists of *pairs* of interventional environments,
 
 You can download CSuite datasets from any previous version using the following URL pattern
 ```
-$ curl -O https://github.com/microsoft/csuite/releases/download/v<version>/csuite_<dataset>.zip
+$ curl -O https://github.com/microsoft/csuite/releases/download/v<version>/csuite_<name>.zip
 ```
+where `<name>` and `<version>` should be set appropriately.
 
 ### From Python
 
