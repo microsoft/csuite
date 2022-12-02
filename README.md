@@ -227,7 +227,7 @@ A two node system with one categorical and one continuous variable. The structur
 $$
 \begin{align}
 X_0 &\sim \text{Cat}\left(\frac{1}{4}, \frac{1}{4}, \frac{1}{2}\right)\\
-X_1 &= \frac{1}{2}(X_0-1) + \frac{9}{25}\mathbf{1}_{\\{X_1=2\\}} + \frac{8}{5}(s(Z_1) - 1)
+X_1 &= \frac{1}{2}(X_0-1) + \frac{9}{25}\mathbf{1}_{\\{X_0=2\\}} + \frac{8}{5}(s(Z_1) - 1)
 \end{align}
 $$
 
