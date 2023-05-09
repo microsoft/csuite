@@ -6,7 +6,7 @@ CSuite is a collection of synthetic datasets for benchmarking causal machine lea
  - 2000 rows of observational test data;
  - interventional test data, for benchmarking estimation of average treatment effect (ATE) and conditional average treatment effect (CATE), 2000 rows per interventional environment.
  
-The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py) is publicly available.
+The data was generated from known hand-crafted structural equation models (SEMs). Different datasets are intended to test different features of causal discovery and inference algorithms. CSuite was originally introduced in [this paper](https://arxiv.org/pdf/2202.02195.pdf). The [data generation code for CSuite](https://github.com/microsoft/causica/blob/b3c79a01f30f44ed36c582ffe2b4522058d82a73/causica/data_generation/csuite/simulate.py) is publicly available.
 
 ## Versioning
 CSuite datasets are versioned so that we can amend and add datasets, whilst ensuring backwards compatibility with older versions of the data. Full reproducibility with CSuite requires specifying the correct version.
@@ -200,7 +200,7 @@ where $Z_1 \sim t_3,Z_2 \sim \textup{Laplace}(1)$ and $Z_3 \sim N(0,1)$ are mutu
 
 A larger dataset with a pyramidal graph structure. This dataset is constructed so that there are many possible choices of backdoor adjustment set for estimating the treatment effect of $X_7$ on $X_8$. While both minimal and maximal adjustment sets can result in a correct solution, the a minimal adjustment set results in a much lower-dimensional adjustment problem and thus will result in lower variance solutions.
 
-A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py).
+A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/b3c79a01f30f44ed36c582ffe2b4522058d82a73/causica/data_generation/csuite/simulate.py).
 
 ### weak_arrows
 
@@ -209,7 +209,7 @@ A complete description of the structural equations can be found in the [data gen
 A larger dataset that is similar to `large_backdoor`, but with many additional edges. The causal discovery challenge revolves
 around finding all arrows, which are scaled to be relatively weak, but which have significant predictive power for $X_8$ in aggregate.
 
-A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py).
+A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/b3c79a01f30f44ed36c582ffe2b4522058d82a73/causica/data_generation/csuite/simulate.py).
 
 
 ### cat_to_cts
@@ -305,7 +305,7 @@ where $Z_1 \sim N(0,1),Z_3\sim \textup{Exp}(1)$ are independent noise random var
 
 An adaptation of `large_backdoor` with a binary variable $X_7$ which is considered the treatment variable.
 
-A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py).
+A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/b3c79a01f30f44ed36c582ffe2b4522058d82a73/causica/data_generation/csuite/simulate.py).
 
 ### weak_arrow_binary_t
 
@@ -325,7 +325,7 @@ A complete description of the structural equations can be found in the [data gen
 
 An adaptation of `weak_arrows` with a binary variable $X_7$ which is considered the treatment variable.
 
-A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py).
+A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/b3c79a01f30f44ed36c582ffe2b4522058d82a73/causica/data_generation/csuite/simulate.py).
 
 ### mixed_confounding
 
@@ -350,7 +350,7 @@ A complete description of the structural equations can be found in the [data gen
 
 A larger dataset with treatment node $X_0$ and outcome node $X_1$. There are different variables that are: confounders, causes of $X_0$ only, causes of $X_1$ only, downstream of $X_0$, downstream of $X_1$, collider caused by $X_0$ and $X_1$.
 
-A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/main/causica/data_generation/csuite/simulate.py).
+A complete description of the structural equations can be found in the [data generation code for CSuite](https://github.com/microsoft/causica/blob/b3c79a01f30f44ed36c582ffe2b4522058d82a73/causica/data_generation/csuite/simulate.py).
 
 
 ### cat_chain
@@ -413,7 +413,7 @@ $$
 
 ## Contributing
 
-This project welcomes contributions and suggestions. Contributions or suggestions for the code that generates CSuite should be made in the [Causica](https://github.com/microsoft/causica) repository.
+This project welcomes contributions and suggestions.
 
 Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
